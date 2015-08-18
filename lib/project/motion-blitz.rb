@@ -51,6 +51,10 @@ module Motion
       def error(message = nil)
         hud_class.showErrorWithStatus(message)
       end
+      
+      def visible?
+        hud_class.isVisible?
+      end
 
       private
 
